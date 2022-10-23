@@ -1,0 +1,973 @@
+/*===Start Font Family===*/
+
+    /* font-family: 'Bebas Neue', cursive; */
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Silkscreen', cursive; */
+
+/*===End Font Family===*/
+
+/*===Start Common Css===*/
+*{
+    margin  : 0;
+    padding : 0;
+    scroll-behavior: unset;
+}
+ul,ol{
+    list-style  : none;
+}
+a{
+    text-decoration : none;
+}
+body{
+    background  : #060606;
+    overflow-x  : hidden;
+}
+/*===End Common Css===*/
+
+/*===Staer Section Shape Area===*/
+.shape-area{
+    position    : relative;
+}
+
+.bottom-shape{
+    width               : 100%;
+    height              : 200px;
+    transform           : skewX(-87deg);
+    transform-origin    : left bottom;
+    background          : #060606;
+    position            : absolute;
+    bottom              : 0;
+    left                : 0;
+    -webkit-transform   : skewX(-87deg);
+    -moz-transform      : skewX(-87deg);
+    -ms-transform       : skewX(-87deg);
+    -o-transform        : skewX(-87deg);
+}
+
+.top-shape {
+    width           : 100%;
+    height          : 200px;
+    transform       : skewX(-87deg);
+    transform-origin: left top;
+    background      : #060606;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    -webkit-transform   : skewX(-87deg);
+    -moz-transform      : skewX(-87deg);
+    -ms-transform       : skewX(-87deg);
+    -o-transform        : skewX(-87deg);
+}
+/*===End Section Shape Area===*/
+
+/*===Start Header Area===*/
+.header-content{
+    padding-bottom  : 30px;
+}
+
+.header-content h4{
+    font-size       : 40px;
+    font-family     : 'Oswald', sans-serif;
+    font-weight     : 500;
+    text-transform  : uppercase;
+    color           : #e50d40;
+}
+
+.header-content p{
+    font-family     : 'Oswald', sans-serif;
+    font-size       : 16px;
+    font-weight     : 400;
+    color           : #02D8F3;
+}
+
+.header-content span{
+    color   : #02D8F3;
+}
+/*===End Header Area===*/
+
+/*===Start Box Shap Area===*/
+.box-shap-area{
+    position    : relative;
+}
+.box-shap{
+    position    : absolute;
+    bottom      : 0;
+    left        : 0;
+    width       : 50px;
+    height      : 50px;
+    background  : #060606;
+}
+/*===End Box Shap Area===*/
+
+/*===Start NavBar Area===*/
+.navbar{
+    position    : absolute;
+    top         : 0;
+    left        : 0;
+    width       : 100%;
+}
+
+.sticky-menu{
+    position    : sticky;
+    top         : 0;
+    left        : 0;
+    width       : 100%;
+    background  : #0e0e0e;
+    z-index     : 999;
+    animation   : stickyactive 1s;
+    -webkit-animation   : stickyactive 1s;
+}
+
+@keyframes stickyactive {
+    from{
+        top : -100px;
+    }
+    to{
+        top : 0;
+    }
+}
+
+.navbar .navbar-brand img{
+    width   : 300px;
+}
+
+.navbar .nav-item .nav-link {
+    color           : #e50d40;
+    font-family     : 'Bebas Neue', cursive;
+    font-size       : 22px;
+    font-weight     : 400;
+    transition      : all linear 0.5s;
+    letter-spacing  : 1px;
+    -webkit-transition  : all linear 0.5s;
+    -moz-transition     : all linear 0.5s;
+    -ms-transition      : all linear 0.5s;
+    -o-transition       : all linear 0.5s;
+}
+
+.navbar .nav-item .nav-link:hover{
+    color   : #02D8F3;
+}
+
+.nav-item.active .nav-link{
+    color   : #02D8F3;
+}
+/*===End NavBar Area===*/
+
+/*===Start Bannre Area===*/
+#banner{
+    padding-top : 80px;
+}
+
+.ban-text h1{
+    font-size       : 70px;
+    font-family     : 'Oswald', sans-serif;
+    font-weight     : 500;
+    color           : #02D8F3;
+    text-transform  : uppercase;
+    letter-spacing  : 2px;
+}
+.ban-text h1 span{
+    color                       : #02D8F3;
+    -webkit-text-fill-color     : transparent;
+    -webkit-text-stroke-width   :2px;
+    letter-spacing              : 4px;
+}
+.ban-text p{
+    color           : #e50d40;
+    font-family     : 'Bebas Neue', cursive;
+    font-size       : 18px;
+    font-weight     : 400;
+    text-transform  : uppercase;
+    letter-spacing  : 5px;
+    padding-bottom  : 50px;
+}
+
+.button a{
+    color           : #fff;
+    font-family     : 'Oswald', sans-serif;
+    font-weight     : 500;
+    font-size       : 20px;
+    text-transform  : uppercase;
+    padding         : 15px 25px;
+    background      : #e50d40;
+    clip-path       : polygon(0 0, 90% 0%, 100% 20%, 100% 80%, 100% 100%, 10% 100%, 0% 80%, 0 20%);
+    letter-spacing  : 2px;
+    transition      : all linear 1s;
+    -webkit-transition  : all linear 1s;
+    -moz-transition     : all linear 1s;
+    -ms-transition      : all linear 1s;
+    -o-transition       : all linear 1s;
+}
+
+.ban-img-item{
+    width   : 100%;
+    height  : 500px;
+    position: relative;
+}
+.ban-img{
+    width   : 100%;
+    height  : 100%;
+    position: absolute;
+    top     : 0;
+    left    : 0;
+}
+.ban-img img {
+    width           : 100%;
+    height          : 100%;
+    object-fit      : cover;
+    object-position : 80% 0%;
+}
+/*===End Bannre Area===*/
+
+/*===Start Shop Area*/
+
+    #shop {
+        padding : 80px 0;
+    }
+
+    .si-product {
+        width           : 100%;
+        height          : 330px;
+        position        : relative;
+        border-radius   : 20px;
+        -webkit-border-radius   : 20px;
+        -moz-border-radius      : 20px;
+        -ms-border-radius       : 20px;
+        -o-border-radius        : 20px;
+    }
+
+    .product-glitch{
+        width   : 100%;
+        height  : 100%;
+        position: absolute;
+        top     : 0;
+        left    : 0;
+    }
+
+    .si-product h6{
+        text-align      : right;
+        padding-right   : 40px;
+        padding-top     : 15px;
+        font-family     : 'Oswald', sans-serif;
+        font-size       : 16px;
+        font-weight     : 500;
+        color           : #e50d40;
+        text-transform  : uppercase;
+    }
+
+    .si-product i{
+        padding-right   : 5px;
+    }
+
+    .si-product img{
+        width       : 200px;
+        position    : absolute;
+        top         : 60%;
+        left        : 50%;
+        transform   : translate(-50%, -50%);
+        -webkit-transform   : translate(-50%, -50%);
+        -moz-transform      : translate(-50%, -50%);
+        -ms-transform       : translate(-50%, -50%);
+        -o-transform        : translate(-50%, -50%);
+    }
+
+    .si-text {
+        margin-top  : 30px;
+    }
+    
+    .si-text h3{
+        display : inline-block;
+    }
+
+    .si-t-left h3 a, .si-t-right span{
+        font-family     : 'Oswald', sans-serif;
+        font-size       : 22px;
+        font-weight     : 700;
+        color           : #fff;
+        text-transform  : uppercase;
+        transition      : all linear 0.3s;
+        -webkit-transition  : all linear 0.3s;
+        -moz-transition     : all linear 0.3s;
+        -ms-transition      : all linear 0.3s;
+        -o-transition       : all linear 0.3s;
+}
+
+    .si-t-left h3:hover a{
+        color   : #e50d40;
+    }
+
+    .si-t-left p{
+        color           : #bababa;
+        font-family     : 'Bebas Neue', cursive;
+        font-size       : 15px;
+        font-weight     : 500;
+        letter-spacing  : 2px;
+    }
+
+    #shop .button{
+        margin-top  : 50px;
+    }
+
+    .si-t-right span{
+        color   : #e50d40;
+    }
+
+    .si-t-right a{
+        display     : block;
+        width       : 60px;
+        height      : 50px;
+        background  : #1F1F28;
+        text-align  : center;
+        clip-path   : polygon(0 0, 90% 0%, 100% 20%, 100% 80%, 100% 100%, 10% 100%, 0% 80%, 0 20%);
+        margin-top  : 75px;
+        transition  : all linear 0.3s;
+        -webkit-transition  : all linear 0.3s;
+        -moz-transition     : all linear 0.3s;
+        -ms-transition      : all linear 0.3s;
+        -o-transition       : all linear 0.3s;
+}
+
+    .si-t-right a i{
+        line-height     : 50px;
+        font-size       : 22px;
+        color           : #e50d40;
+        transition      : all linear 0.3s;
+        -webkit-transition  : all linear 0.3s;
+        -moz-transition     : all linear 0.3s;
+        -ms-transition      : all linear 0.3s;
+        -o-transition       : all linear 0.3s;
+}
+
+    .si-t-right a:hover i{
+        color   : #fff;
+    }
+
+    .si-t-right a:hover{
+        background  : #e50d40;
+    }
+
+/*===End Shop Area*/
+
+/*===Start Update Area===*/
+#update{
+    padding-top     : 100px;
+    padding-bottom  : 75px;
+}
+
+.update-box-border:nth-child(even) .update-box-area{
+    display         : flex;
+    flex-direction  : column-reverse;
+}
+
+.update-box{
+    width           : 100%;
+    height          : 450px;
+    background      : #0e0e0e;
+    margin-bottom   : 25px;
+    box-sizing      : border-box;
+    border          : solid 1px #e50d40;
+}
+
+.update-box-long{
+    width   : 100%;
+    height  : 520px;
+}
+
+.update-box-long .update-box-img{
+    height  : 270px;
+}
+
+.update-box-img{
+    width   : 100%;
+    height  : 200px;
+}
+
+.update-box-img img{
+    width       : 100%;
+    height      : 100%;
+    object-fit  : cover;
+}
+
+.update-box-text{
+    padding :20px 20px;
+}
+
+.update-box-text span{
+    font-family     : 'Bebas Neue', cursive;
+    font-size       : 16px;
+    font-weight     : 400;
+    color           : #e50d40;
+    letter-spacing  : 2px;
+}
+
+.update-box-text h3{
+    font-size       : 20px;
+    font-family     : 'Oswald', sans-serif;
+    font-weight     : 500;
+    color           : #f6f6f6;
+    text-transform  : uppercase;
+    padding-bottom  : 8px;
+}
+
+.update-box-text p{
+    font-size   : 16px;
+    font-family : 'Oswald', sans-serif;
+    font-weight : 300;
+    color       : #f6f6f6;
+}
+
+.update-box-text a{
+    font-family : 'Oswald', sans-serif;
+    font-size   : 16px;
+    font-weight : 500;
+    color       : #02D8F3;
+}
+/*===End Update Area===*/
+
+/*===Start Tool Area===*/
+#tool{
+    padding : 80px 0;
+}
+
+.tool-main-area{
+    position    : relative;
+    overflow    : hidden;
+}
+
+.tool-background{
+    position    : absolute;
+    top         : 0;
+    left        : 50%;
+    transform   : translateX(-50%);
+    -webkit-transform   : translateX(-50%);
+    -moz-transform      : translateX(-50%);
+    -ms-transform       : translateX(-50%);
+    -o-transform        : translateX(-50%);
+}
+
+.tool-slider-btn-area{
+    position    : relative;
+}
+
+.tool-s-top{
+    position    : absolute;
+    top         : -40px;
+    left        : 50%;
+    transform   : translateX(-50%);
+    -webkit-transform   : translateX(-50%);
+    -moz-transform      : translateX(-50%);
+    -ms-transform       : translateX(-50%);
+    -o-transform        : translateX(-50%);
+}
+
+.tool-s-bottom{
+    position    : absolute;
+    bottom      : -40px;
+    left        : 50%;
+    transform   : translateX(-50%);
+    -webkit-transform   : translateX(-50%);
+    -moz-transform      : translateX(-50%);
+    -ms-transform       : translateX(-50%);
+    -o-transform        : translateX(-50%);
+}
+
+.tool-s-top, .tool-s-bottom{
+    width           : 40px;
+    height          : 40px;
+    background      : transparent;
+    border          : solid 1px #e50d40;
+    border-radius   : 50%;
+    text-align      : center;
+    line-height     : 40px;
+    transition      : all linear 0.3s;
+    -webkit-transition  : all linear 0.3s;
+    -moz-transition     : all linear 0.3s;
+    -ms-transition      : all linear 0.3s;
+    -o-transition       : all linear 0.3s;
+    -webkit-border-radius   : 50%;
+    -moz-border-radius      : 50%;
+    -ms-border-radius       : 50%;
+    -o-border-radius        : 50%;
+}
+
+.tool-s-top i, .tool-s-bottom i{
+    font-size   : 20px;
+    color       : #e50d40;
+    transition  : all linear 0.3s;
+    -webkit-transition  : all linear 0.3s;
+    -moz-transition     : all linear 0.3s;
+    -ms-transition      : all linear 0.3s;
+    -o-transition       : all linear 0.3s;
+}
+
+.tool-s-top:hover i, .tool-s-bottom:hover i{
+    color   : #02D8F3;
+}
+
+.tool-s-top:hover, .tool-s-bottom:hover{
+    border-color    : #02D8F3;
+}
+
+.tool-lrft{
+    width   : 40%;
+}
+
+.tool-lrft h3{
+    font-family     : 'Bebas Neue', cursive;
+    font-size       : 22px;
+    font-weight     : 700;
+    text-transform  : uppercase;
+    letter-spacing  : 2px;
+    color           : #e50d40;
+    text-align      : right;
+}
+
+#tool .tool-item.slick-center .tool-mid-icon{
+    border      : solid 1px #02D8F3;
+    transform   : scale(1.3);
+    transition  : all linear 0.5s;
+    -webkit-transition  : all linear 0.5s;
+    -moz-transition     : all linear 0.5s;
+    -ms-transition      : all linear 0.5s;
+    -o-transition       : all linear 0.5s;
+    -webkit-transform   : scale(1.3);
+    -moz-transform      : scale(1.3);
+    -ms-transform       : scale(1.3);
+    -o-transform        : scale(1.3);
+}
+
+.tool-mid{
+    width   : 10%;
+}
+
+.tool-mid-icon{
+    width           : 70px;
+    height          : 70px;
+    margin          : 0 auto;
+    background      : #0e0e0e;
+    border-radius   : 50%;
+    line-height     : 70px;
+    text-align      : center;
+    border          : solid 1px #e50d40;
+    transition      : all linear 0.3s;
+    -webkit-transition  : all linear 0.3s;
+    -moz-transition     : all linear 0.3s;
+    -ms-transition      : all linear 0.3s;
+    -o-transition       : all linear 0.3s;
+    -webkit-border-radius   : 50%;
+    -moz-border-radius      : 50%;
+    -ms-border-radius       : 50%;
+    -o-border-radius        : 50%;
+}
+
+.tool-mid-icon img{
+    display : inline-block;
+}
+
+.tool-right{
+    width           : 40%;
+    background      : #0e0e0e;
+    padding         : 10px 20px;
+    border          : solid 1px #e50d40;
+    border-radius   : 20px;
+    -webkit-border-radius   : 20px;
+    -moz-border-radius      : 20px;
+    -ms-border-radius       : 20px;
+    -o-border-radius        : 20px;
+}
+.tool-right p{
+    font-size       : 16px;
+    font-family     : 'Oswald', sans-serif;
+    font-weight     : 400;
+    color           : #f6f6f6;
+}
+
+.tool-item:nth-child(even){
+    flex-direction  : row-reverse;
+}
+.tool-item:nth-child(even) .tool-lrft h3{
+    text-align  : left;
+}
+.tool-item:nth-child(even) .tool-right p{
+    text-align  : right;
+}
+/*===End Tool Area===*/
+
+/*===Start Counter Area===*/
+#counter{
+    background: #0e0e0e;
+    padding : 80px 0;
+}
+
+.counter-main-area{
+    position    : relative;
+}
+
+.counter-main-area::after{
+    content     : '';
+    width       : 100%;
+    height      : 2px;
+    background  : #e50d40;
+    position    : absolute;
+    top         : -45px;
+    left        : 0;
+    transform   : rotate(-3deg);
+    -webkit-transform   : rotate(-3deg);
+    -moz-transform      : rotate(-3deg);
+    -ms-transform       : rotate(-3deg);
+    -o-transform        : rotate(-3deg);
+}
+
+.counter-main-area::before{
+    content     : '';
+    width       : 100%;
+    height      : 2px;
+    background  : #e50d40;
+    position    : absolute;
+    bottom      : -45px;
+    left        : 0;
+    transform   : rotate(-3deg);
+    -webkit-transform   : rotate(-3deg);
+    -moz-transform      : rotate(-3deg);
+    -ms-transform       : rotate(-3deg);
+    -o-transform        : rotate(-3deg);
+}
+
+.counter-area{
+    transform           : rotate(-3deg);
+    -webkit-transform   : rotate(-3deg);
+    -moz-transform      : rotate(-3deg);
+    -ms-transform       : rotate(-3deg);
+    -o-transform        : rotate(-3deg);
+}
+
+.counter-box{
+    border      : solid 1px #e50d40;
+    padding     : 15px 0;
+    transform   : skew(-3deg);
+    -webkit-transform   : skew(-3deg);
+    -moz-transform      : skew(-3deg);
+    -ms-transform       : skew(-3deg);
+    -o-transform        : skew(-3deg);
+}
+
+.counter-box h3{
+    font-family     : 'Bebas Neue', cursive;
+    font-weight     : 400;
+    font-size       : 40px;
+    color           : #02D8F3;
+    margin          : 0;
+    padding-bottom  : 15px;
+    transform       : skew(3deg);
+    -webkit-transform   : skew(3deg);
+    -moz-transform      : skew(3deg);
+    -ms-transform       : skew(3deg);
+    -o-transform        : skew(3deg);
+}
+
+.counter-box p{
+    font-family     : 'Oswald', sans-serif;
+    font-weight     : 500;
+    font-size       : 20px;
+    text-transform  : uppercase;
+    color           : #e50d40;
+    margin          : 0;
+    letter-spacing  : 3px;
+    transform       : skew(3deg);
+    -webkit-transform   : skew(3deg);
+    -moz-transform      : skew(3deg);
+    -ms-transform       : skew(3deg);
+    -o-transform        : skew(3deg);
+}
+/*===End Counter Area===*/
+
+/*===Start upcoming Event Area===*/
+#event{
+    padding-top     : 100px;
+    padding-bottom  : 60px;
+}
+
+.event-area{
+    position        : relative;
+    width           : 100%;
+    padding         : 50px;
+    background      : linear-gradient( 110deg, #e50d40 20%, #201f1f 0%);
+    border-radius   : 10px;
+    -webkit-border-radius   : 10px;
+    -moz-border-radius      : 10px;
+    -ms-border-radius       : 10px;
+    -o-border-radius        : 10px;
+}
+
+.event-content-area{
+    position    : relative;
+}
+
+.counter-text{
+    position    : absolute;
+    bottom      : 0;
+    left        : 0;
+    width       : 100%;
+}
+
+.event-content ul li {
+    padding         : 10px 10px;
+    font-family     : 'Oswald', sans-serif;
+    font-weight     : 700;
+    font-size       : 20px;
+    color           : #e50d40;
+    text-transform  : uppercase;
+    display         : inline-block;
+}
+
+.event-content h4 {
+    font-family     : 'Bebas Neue', cursive;
+    font-weight     : 400;
+    font-size       : 30px;
+    color           : #02d8f3;
+    text-align      : center;
+}
+
+.event-join{
+    width       : 100%;
+    text-align  : center;
+}
+
+.event-join input{
+    background      : #e50d40;
+    color           : #02d8f3;
+    text-transform  : uppercase;
+    font-family     : 'Silkscreen', cursive;
+    font-size       : 17px;
+    font-weight     : 400;
+    border          : none;
+    padding         : 15px 27px;
+    clip-path       : polygon(96% 0, 100% 36%, 100% 100%, 4% 100%, 0 66%, 0 0);
+    height          : 56px;
+    width           : 250px;
+}
+
+.event-join input::placeholder{
+    color       : #fff;
+    font-family : 'Oswald', sans-serif;
+    font-size   : 16px;
+}
+
+.event-join button {
+    border          : none;
+    background      : #02D8F3;
+    width           : 150px;
+    height          : 56px;
+    color           : #e50d40;
+    font-family     : 'Oswald', sans-serif;
+    font-weight     : 700;
+    font-size       : 16px;
+    clip-path       : polygon(93% 0, 100% 35%, 100% 100%, 4% 100%, 0 80%, 0 0);
+    margin-left     : -14px;
+    text-transform  : uppercase;
+}
+
+.event-join h3 {
+    font-family     : 'Oswald', sans-serif;
+    font-weight     : 400;
+    font-size       : 50px;
+    text-align      : center;
+    text-transform  : uppercase;
+    padding-bottom  : 50px;
+    color           : #02D8F3;
+}
+
+/*===End upcoming Event Area===*/
+
+/*===Start review slider area===*/
+
+#review-slider{
+    padding : 50px 0;
+}
+
+.profile-area{
+    width           : 80px;
+    height          : 80px;
+    background      : #e50d40;
+    border-radius   : 50%;
+    -webkit-border-radius   : 50%;
+    -moz-border-radius      : 50%;
+    -ms-border-radius       : 50%;
+    -o-border-radius        : 50%;
+}
+
+.review-box-area{
+    width       : 100%;
+    height      : 200px;
+    background  : #02D8F3;
+}
+
+/*===End review slider area===*/
+
+/*===Start Contact Area===*/
+#contact {
+    padding: 100px 0px;
+}
+
+.c-user-info-area input {
+    display: block;
+    background-color: #060606;
+    border: solid 1px #02d8f3;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    color: #02d8f3;
+
+}
+
+.c-user-info-area .mail::placeholder {
+    font-family: 'Silkscreen', cursive;
+}
+
+.c-user-info-area .mail{
+    font-family: 'Oswald', sans-serif;
+}
+
+.c-user-info-area input:focus-visible {
+    outline: none;
+}
+
+.c-user-info-area input::placeholder {
+    color: #02d8f3;
+}
+
+.c-user-info-area textarea {
+    width: 100%;
+    height: 300px;
+}
+
+.c-user-info-area textarea {
+    border: solid 1px #02d8f3;
+    background-color: #060606;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    color: #02d8f3;
+}
+
+.c-user-info-area textarea:focus-visible {
+    outline: none;
+}
+
+.c-user-info-area textarea::placeholder {
+    color: #02d8f3;
+}
+
+.c-user-info-area textarea::-webkit-scrollbar {
+    background-color: #060606;
+    width: 10px;
+}
+
+.c-user-info-area textarea::-webkit-scrollbar-thumb {
+    background-color:#02d8f3;
+    border-radius: 10px;
+}
+
+#contact .button {
+    margin-top: 50px;
+}
+
+#contact .button a {
+    color: #02d8f3;
+    font-family: 'Silkscreen', cursive;
+    background: #e50d40;
+    display: inline-block;
+}
+
+/*===End Contact Area===*/
+
+/*===Start Footer Area===*/
+#footer {
+    background-color: #201F1F;
+    padding: 50px 0px;
+}
+
+#footer .event-join button {
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+}
+
+#footer .event-join input {
+    width: 170px;
+    height: 40px;
+    font-size: 16px;
+    font-family : 'Oswald', sans-serif;
+    text-transform: lowercase;
+    color: #f6f6f6;
+}
+
+#footer .event-join input::placeholder {
+    font-size   : 14px;
+    text-transform: uppercase;
+}
+
+.f-list a {
+    font-size: 16px;
+    font-family : 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #f6f6f6;
+    transition: all linear 0.3s;
+}
+
+.f-list a:hover {
+    color: #02d8f3;
+}
+
+.footer-follow h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+.footer-social-icon a{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: inline-block;
+    transition: all linear 0.3s;
+}
+.footer-social-icon a:hover{
+    background: #e50d40;
+}
+.footer-social-icon a i{
+    font-size: 16px;
+    color: #353535;
+    line-height: 35px;
+}
+
+#copyright{
+    background: #353535;
+}
+
+.copyright-area span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #f1f1f1;
+    padding: 20px 0;
+    display: inline-block;
+}
+.copyright-area span a{
+    color: #e50d40;
+}
+/*===End Footer Area===*/
